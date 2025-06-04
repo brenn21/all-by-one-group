@@ -1,0 +1,24 @@
+.landing-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100vw;
+}
+
+h1 {
+  text-shadow: 1px 1px 5px;
+  text-align: center;
+  margin: 4px;
+  padding: 9px;
+  background-color: lch(56.72% 66.47 56.18 / 0.984);
+  border-radius: 9px ;
+}
+

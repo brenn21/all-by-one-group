@@ -1,0 +1,111 @@
+// Variables (optionnel si vous utilisez SCSS)
+$primary-color: black;
+$secondary-color: #6c757d;
+$background-color: #f8f9fa;
+$text-color: #212529;
+
+.about-section {
+  padding: 4rem 2rem;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h1, h2, h3 {
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+ button {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: adjust-color($primary-color, $lightness: -10%);
+  }
+}
+}
+
+.services .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: orange;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px white;
+  padding: 1.5rem;
+  width: 300px;
+  transition: transform 0.3s ease;
+  text-align: left;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+  }
+}
+
+.mission,
+.why-us {
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.why-us ul {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: $text-color;
+  }
+}
+
+.contact {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .services .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

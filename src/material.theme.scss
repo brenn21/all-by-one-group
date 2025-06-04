@@ -1,0 +1,55 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// Définir la palette primaire
+$primary: mat.define-palette((
+  50: #FFF3E0,
+  100: #FFE9C4,
+  200: #FFDDA8,
+  300: #FFD18C,
+  400: #FFC870,
+  500: #FFBF54,
+  600: #FFB84D,
+  700: #FFAD42,
+  800: #FFA237,
+  900: #FF972C,
+  A100: #FFE0B2,
+  A200: #FFCC80,
+  A400: #FFB74D,
+  A700: #FFA928,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: rgba(black, 0.87),
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: rgba(black, 0.87),
+    A200: rgba(black, 0.87),
+    A400: rgba(black, 0.87),
+    A700: rgba(black, 0.87),
+  )
+));
+
+// Définir la palette accent
+$accent: mat.define-palette(mat.$amber-palette, 400);
+
+// Palette warn (pour erreurs)
+$warn: mat.define-palette(mat.$deep-orange-palette);
+
+// Créer le thème
+$theme: mat.define-light-theme((
+  color: (
+    primary: $primary,
+    accent: mat.define-palette(mat.$blue-grey-palette),
+    warn: mat.define-palette(mat.$red-palette),
+  ),
+));
+
+// Appliquer les styles du thème
+@include mat.all-component-themes($theme);

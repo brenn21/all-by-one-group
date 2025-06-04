@@ -1,0 +1,29 @@
+.button-nav {
+  color: orange;
+  box-shadow: 1px 2px 3px orange;
+  margin: 0;
+}
+
+.button-main {
+  box-shadow: 1px 2px;
+  margin-right: auto;
+  background-color: #52504e;
+  color: orange;
+}
+
+.nav-menu {
+  padding: 1%;
+  margin: 0;
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: end;
+  background-color: rgb(44, 43, 42);
+}
+
+.active {
+  background-color: rgb(115, 133, 148);
+  color: white;
+  font-weight: bold;
+}

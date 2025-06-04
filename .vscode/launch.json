@@ -3,6 +3,21 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "node",
+      "request": "launch",
+      "name": "Run esbuild",
+      "runtimeExecutable": "esbuild",
+      "cwd": "${workspaceFolder}",
+      "args": []
+    },
+    {
+      "name": "Launch Edge",
+      "request": "launch",
+      "type": "msedge",
+      "url": "http://localhost:8089",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
       "name": "ng serve",
       "type": "chrome",
       "request": "launch",
